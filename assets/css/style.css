@@ -573,6 +573,7 @@ header .navbar {
 
 .call-to-action .inner-content {
   margin-top: 60px;
+  margin-bottom: 40px;
   padding: 30px;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -622,6 +623,7 @@ footer .inner-content p a {
 
 .products {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .products .filters {
@@ -1141,5 +1143,239 @@ footer .inner-content p a {
 
   .product-item .down-content h6 {
     margin-bottom: 20px;
+  }
+}
+
+/* CUSTUM CSS FOR OUR EVENTS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+/* Section heading */
+.section-heading {
+  /* text-align: center; */
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0f172a;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #f33f3f;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.section-heading p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* Responsive heading */
+@media (max-width: 576px) {
+  .section-heading h2 {
+    font-size: 26px;
+  }
+}
+.car-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.car-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.car-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.car-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h4 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.card-overlay p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.card-overlay span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 14px;
+}
+
+/* Register button */
+.register-btn {
+  padding: 10px 22px;
+  background:#f33f3f;
+  color: #000;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.car-card:hover .register-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.register-btn:hover {
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+     /* CSS FOR FOOTER  */
+     .site-footer {
+  background: #0f172a;
+  color: #f33f3f;
+  padding: 60px 20px 30px;
+  font-size: 14px;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+
+
+/* Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: #f33f3f#ffffff;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+    color: #ffffff;
+
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #f33f3f;
+}
+
+/* Social */
+.social-links a {
+  display: grid;
+  margin-right: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+    line-height: 1.6;
+}
+
+.social-links a:hover {
+  color: #f33f3f;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgb(243, 236, 236);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 6px 0;
+    color: #ffffff;
+
+}
+
+.footer-bottom a {
+  color: #f33f3f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links a {
+    margin: 0 8px;
   }
 }
