@@ -195,6 +195,14 @@ a.filled-button:hover {
   }
 }
 
+
+.logo {
+  background: url("images/logo.png") no-repeat center;
+  background-size: contain;
+  width: 120px;
+  height: 40px;
+}
+
 /* Header Style */
 header {
   position: absolute;
@@ -326,8 +334,8 @@ header .navbar {
 .banner-item-01 {
   padding: 300px 0px;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(../images/29593.jpg);
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../images/blaster\ banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -335,7 +343,7 @@ header .navbar {
 
 .banner-item-02 {
   padding: 300px 0px;
-  background-image: url(../images/4389.jpg);
+  /* background-image: url(../images/4389.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -343,7 +351,7 @@ header .navbar {
 
 .banner-item-03 {
   padding: 300px 0px;
-  background-image: url(../images/805.jpgF);
+  /* background-image: url(../images/805.jpgF); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1380,3 +1388,10 @@ footer .inner-content p a {
     margin: 0 8px;
   }
 }
+
+/* FOOTER LOGO  */
+.footer-logo {
+  height: 200px;
+  width: auto;
+}
+ 
