@@ -364,13 +364,13 @@ header .navbar {
   max-height: 600px;
 }
 
-.banner .text-content {
+/* .banner .text-content { */
   /* position: absolute; */
   /* bottom: 20%; */
   /* transform: translateY(-50%); */
   /* text-align: center; */
   /* width: 100%; */
-}
+/* } */
 
 /* .banner .text-content h4 {
   color: #f33f3f;
@@ -1125,8 +1125,8 @@ footer .inner-content p a {
 @media (max-width: 992px) {
   .navbar .navbar-brand {
     position: absolute;
-    left: 30px;
-    top: 32px;
+    left: 5px;
+    top: 15px;
   }
 
   .navbar .navbar-brand {
@@ -1420,3 +1420,4 @@ footer .inner-content p a {
   width: auto;
 }
  
+
