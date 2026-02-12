@@ -91,7 +91,7 @@ a.filled-button:hover {
 }
 
 .page-heading {
-  padding: 210px 0px 130px 0px;
+  /* padding: 210px 0px 130px 0px; */
   text-align: center;
   background-position: center center;
   background-repeat: no-repeat;
@@ -205,11 +205,11 @@ a.filled-button:hover {
 
 /* Header Style */
 header {
-  position: absolute;
+  /* position: absolute; */
   z-index: 99999;
   width: 100%;
   height: 80px;
-  background:;
+  background: #fff;
   /* background-color: #232323; */
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -219,6 +219,7 @@ header {
 
 header .navbar {
   padding: 17px 0px;
+  background-color: #fff;
 }
 
 .background-header .navbar {
@@ -331,7 +332,7 @@ header .navbar {
 .banner {
   position: relative;
   text-align: center;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .banner-item-01 {
@@ -342,23 +343,24 @@ header .navbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  min-height: 60vh;
 }
 
-.banner-item-02 {
-  padding: 300px 0px;
-  /* background-image: url(../images/4389.jpg); */
-  background-size: cover;
+/* .banner-item-02 { */
+/* padding: 300px 0px; */
+/* background-image: url(../images/4389.jpg); */
+/* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-}
+  background-position: center center; */
+/* } */
 
-.banner-item-03 {
-  padding: 300px 0px;
-  /* background-image: url(../images/805.jpgF); */
-  background-size: cover;
+/* .banner-item-03 { */
+/* padding: 300px 0px; */
+/* background-image: url(../images/805.jpgF); */
+/* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; */
+/* } */
 
 .banner .banner-item {
   max-height: 600px;
@@ -1443,4 +1445,41 @@ footer .inner-content p a {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+/* ===== ABOUT PAGE BANNER RESPONSIVE FIX ===== */
+/* FORCE ABOUT BANNER RESPONSIVE */
+
+.page-heading.about-heading.header-text {
+  min-height: 60vh !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlay fix */
+
+.page-heading.about-heading.header-text::before {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .page-heading.about-heading.header-text {
+    min-height: 40vh !important;
+    background-position: center top !important;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .page-heading.about-heading.header-text {
+    min-height: 35vh !important;
+  }
 }
