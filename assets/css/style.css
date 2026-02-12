@@ -528,9 +528,9 @@ header .navbar {
 
 /* Best Features */
 
-.about-features {
+/* .about-features {
   margin-top: 100px !important;
-}
+} */
 
 .about-features p {
   border-bottom: 1px solid #eee;
@@ -542,9 +542,9 @@ header .navbar {
   border-bottom: none !important;
 }
 
-.best-features {
+/* .best-features {
   margin-top: 50px;
-}
+} */
 
 .best-features .container .row {
   border-bottom: 1px solid #eee;
@@ -572,9 +572,9 @@ header .navbar {
 }
 
 .best-features ul.featured-list li a {
-  font-size: 14px;
+  font-size: 20px;
   color: #4a4a4a;
-  font-weight: 300;
+  font-weight: 500;
   transition: all 0.3s;
   position: relative;
   padding-left: 13px;
@@ -824,11 +824,12 @@ footer .inner-content p a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 100px 0px;
+  /* padding: 100px 0px; */
 }
 
 .services .section-heading h2 {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .service-item {
@@ -915,9 +916,9 @@ footer .inner-content p a {
 
 /* Find Us */
 
-.find-us {
+/* .find-us {
   margin-top: 100px;
-}
+} */
 
 .find-us p {
   border-bottom: 1px solid #eee;
