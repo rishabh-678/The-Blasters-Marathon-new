@@ -1484,3 +1484,16 @@ footer .inner-content p a {
     min-height: 35vh !important;
   }
 }
+/* READ MORE BUTTON MOBILE FIX */
+
+@media (max-width: 768px) {
+  .section-heading a.filled-button {
+    float: none !important;
+    display: inline-block;
+    margin: 0 auto 20px;
+  }
+
+  .section-heading {
+    text-align: center;
+  }
+}
